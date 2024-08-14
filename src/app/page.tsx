@@ -1,14 +1,14 @@
 // import Image from "next/image";
 import { useEffect, useState } from "react";
-import Chord from "/Users/bcook/OneDrive/Documents/Code Chrysalis-CC35/SoloProjectV2/frontend/src/app/components/Chords";
+import Chords from "./components/Chords";
 
 // const endPoint = import.meta.env.CHORDS_SERVER;
-const endPoint = "http://localhost:3000/";
+// const endPoint = "http://localhost:3000/";
 export default async function Home() {
   return (
     <>
       <div>
-        <Chord></Chord>
+        <Chords></Chords>
       </div>
     </>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
