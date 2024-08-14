@@ -1,31 +1,15 @@
 // import Image from "next/image";
 import { useEffect, useState } from "react";
+import Chord from "/Users/bcook/OneDrive/Documents/Code Chrysalis-CC35/SoloProjectV2/frontend/src/app/components/Chords";
 
 // const endPoint = import.meta.env.CHORDS_SERVER;
 const endPoint = "http://localhost:3000/";
 export default async function Home() {
-  const getChords = async () => {
-    const res = await fetch(endPoint + "/chords");
-    // console.log(res);
-    return res.json();
-  };
-
-  const data = await getChords();
-  // console.log(data);
-  // useState
-  // const [chordsList, setChordsList] = useState<object>([]);
-  // useEffect
-
-  // useEffect(() => {}, []);
-
-  // Handler functions
-  const handleGetChords = async () => {
-    // const chords = await
-  };
-
   return (
     <>
-      <div>{/* <ul>{data.map((item: object) => {})}</ul> */}</div>
+      <div>
+        <Chord></Chord>
+      </div>
     </>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
